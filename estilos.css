@@ -1,0 +1,208 @@
+/*Este es un comentario en CSS*/
+#contenedor{
+    border:5px solid black;   /* Colocamos un borde que indica los limites del todo el contenedor*/ 
+}
+
+
+#cabecera{   
+
+    background-color:hsla(229, 100%, 0%, 0.9);; /*color de fondo de un elemento - contenedor div=cabecera*/
+    padding: 30px;
+    text-align: center;
+}
+
+
+.izquierdo {
+	float:left; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:20%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:20px; /* Relleno */
+	background-color:hsla(229, 100%, 36%, 0.9); /*color morado con opacidad hsla*/
+
+
+    height: 100%;/* altura */             /*Añadimos la altura para que se cubra todo*/
+    margin-top:7px; /*Margen superior*/	
+}
+
+
+.derecho {
+	float:right; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:20%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:20px; /* Relleno */
+	background-color:hsla(229, 100%, 36%, 0.9); /*color morado con opacidad hsla*/
+
+    height: 100%;/* altura */
+    margin-top:7px; /*Margen superior*/	
+}
+* {
+    box-sizing: border-box; /*La box-sizingpropiedad CSS nos permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
+  }
+  
+.cuerpo{
+background-color:hsla(0, 100%, 40%, 0.9);
+padding: 40px;
+text-align: justify;
+height: 100%;/* altura */
+margin-top:7px; /*Margen superior*/
+float:left; /* permite al elemento main flotar en una posicion*/
+width:80%; /* anchura del elemento */
+
+
+}
+
+
+#alinear{
+    display: flex;
+    
+    margin: 7px;
+    }
+
+
+
+ 
+
+.pie{
+background-color:hsla(229, 100%, 0%, 0.9);
+text-align: center;
+padding: 10px;  
+}
+
+
+
+.izquierdo hover{
+	background-color:hsla(229, 100%, 0%, 0.9);/* efecto al pasar el cursor por los botones*/
+	color: darkred;/* cambiar color a las letras*/
+}
+
+
+.izquierdo a:hover{
+	background-color:hsla(229, 100%, 0%, 0.9);/* efecto al pasar el cursor por los botones*/
+	color: darkred;/* cambiar color a las letras*/
+}
+
+
+
+body{
+    background-image: url("imagenes/fondo.jpg");/* imagen de fondo*/
+}
+
+#imglogo{
+	max-width:10%;/* define el ancho maximo de un elemento*/
+	width:auto;/* propiedad width css establece el ancho de un elemento. auto - valor por defecto. el navegador calcula el ancho*/
+	height:auto;/* propiedad height css establece la altura de un elemento*/
+	float:left;/* Mantiene la imagen flotando a la izquierda*/
+}
+
+.izquierdo a {
+	background-color:hsl(220, 100%, 50%);/*color en link de menu*/
+	padding:7px;/* relleneo del link boton*/
+	margin-top:7px;/*margen entre un link y otro */
+	display:block;/* pantalla valor de bloque un elemento block siempre tiene algo de espacio encima y debajo*/
+	width:100%;/* anchura relleno de los links*/
+	color:white;/* color del link*/
+	font-weight: bold;/* grueso de la letra*/
+	text-align:center;/* centrar texto*/
+	text-decoration:none;/* sin linea de enlace*/
+}
+
+
+
+
+h1, h2 {
+	font-weight:bolder;/* grosor de texto*/
+	font-size: 200%; /* tamaño de la fuente*/
+	color: white; /* color proporcionado a las etiquetas afectadas */
+}
+
+
+p{
+	font-weight:bold;/* grosor de texto*/
+	font-size:30; /* tamaño de la fuente*/
+	text-align:justify; /* aliniacion del texto */
+}
+
+
+
+.img{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+}
+
+
+.class1{
+	width:640px;
+	height: 380px;
+}
+
+
+.class2{
+	width:640px;
+	height: 380px;
+}
+
+.class3{
+	width:640px;
+	height: 380px;
+}
+
+
+.class4{
+	width:100px;
+	height: 100px;
+	display: inline;
+}
+
+
+.class5{
+	width:100px;
+	height: 100px;
+	display: inline;
+}
+
+
+video{
+	max-width: 100%;
+}
+
+
+#scroll{
+	overflow: auto;
+}
+
+
+@media only screen and (max-width:620px) { /*consulta de medios especificando aplicar condiciones a la pantalla , en este caso 
+	un ancho máximo de 620px para adaptarse y no se distorsionen los elementos que hay en ella*/
+	  .izquierdo, .derecho, .cuerpo {   /* se consideran los divs que hacen la función para maquetar nuestra página, utilizando las clases .menu, .main, .right 
+	  que seran ordenados y adaptados a la pantalla */
+		width:100%;
+        height: auto%;
+
+        
+        
+	  }   
+    .img{
+
+        width:90%;
+        max-width:100px;
+    }
+     
+    video{
+
+        width:100%;
+        max-width:400px;
+    }
+
+    
+
+}
+
+
+table, td, th{
+	border: 2px solid white;
+	width:auto;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
